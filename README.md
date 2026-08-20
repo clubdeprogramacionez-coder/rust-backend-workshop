@@ -174,7 +174,11 @@ Todo lo que está en src/ compila. Nada manual fuera de cargo.
 15. Proyecto I
 16. Proyecto II
 ---
+## 🤝 Contribuidores
 
-> Laboratorio: cada clase imprime direcciones de memoria con {:p} para evidenciar stack vs heap.
-> Práctica: función practica() vacía y compilable dentro de cada clase.
+- Instructor: Cristian Beltran
+- Coordinacion de formacion tecnica: Darick Yael Gonzalez Mellado
+- Estudiantes del curso Progamacion de bajo nivel con c: memoria, punteros y registros 2027-1
+##  Licencia
 
+MIT - Libre para uso educativo
