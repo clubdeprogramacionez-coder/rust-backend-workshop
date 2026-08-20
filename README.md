@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
 # Workshop: Rust Server Fundamentals
 
 Taller de introducción a Rust y desarrollo de servidores web desde cero, 
@@ -177,5 +173,4 @@ Todo lo que está en src/ compila. Nada manual fuera de cargo.
 
 > Laboratorio: cada clase imprime direcciones de memoria con {:p} para evidenciar stack vs heap.
 > Práctica: función practica() vacía y compilable dentro de cada clase.
->>>>>>> d9fe58e (Primer commit)
->>>>>>> 2ec38ce (Primer commit)
+
