@@ -17,7 +17,7 @@ Tener instalado Rust y Cargo en tu sistema antes de iniciar la práctica:
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
 rustc --version
-=======
+
 # Rust Lab 
 ## Seguridad de memoria garantizada en tiempo de compilación, sin manejo manual explícito.
 
