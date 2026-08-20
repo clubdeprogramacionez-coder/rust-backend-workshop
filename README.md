@@ -62,8 +62,12 @@ Si no están en el PATH, cierra y vuelve a abrir la terminal o reinicia VS Code.
 Desde la raíz del repositorio:
 
 ```bash
-cargo build
-cargo run
+cargo build       # Compilar
+cargo run         # Compilar y ejecutar
+cargo check       # Revisar errores sin generar el ejecutable
+cargo test        # Ejecutar tests
+cargo run --release  # Ejecutar versión optimizada
+
 ```
 
 También puedes compilar y ejecutar directamente:
