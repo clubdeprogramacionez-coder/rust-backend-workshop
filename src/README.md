@@ -2,7 +2,7 @@
 
 Proyecto de aprendizaje de **Rust** mediante pequeños laboratorios.
 
-## 📁 Estructura
+##  Estructura
 
 ```text
 src/
@@ -15,7 +15,7 @@ src/
     └── ...
 ```
 
-## 🚀 Ejecución
+##  Ejecución
 
 Los laboratorios se ejecutan desde `main.rs`.
 
@@ -41,7 +41,7 @@ Comprobar que compile:
 cargo check
 ```
 
-## 🧪 Laboratorios
+##  Laboratorios
 
 1. Stack y Heap
 2. Ownership
