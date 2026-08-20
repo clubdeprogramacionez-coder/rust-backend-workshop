@@ -61,5 +61,7 @@ cargo check
 
 Cada laboratorio cuenta con una función `run()` que puede ejecutarse desde `main.rs`.
 
+
 ```rust
-labs::l
+labs::lab_1_stack_heap::run();
+```
