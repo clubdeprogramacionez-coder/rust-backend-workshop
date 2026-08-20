@@ -1,0 +1,24 @@
+{
+  "name": "rust-backend-workshop",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-1-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "rust-analyzer.checkOnSave.command": "cargo check",
+        "files.watcherExclude": {
+          "**/target/**": true
+        }
+      },
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "ms-vscode.cpptools"
+      ]
+    }
+  },
+  "postCreateCommand": "cargo check"
+}

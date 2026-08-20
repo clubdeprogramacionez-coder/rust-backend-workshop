@@ -1,0 +1,10 @@
+{
+  "rust-analyzer.checkOnSave.command": "cargo check",
+  "files.exclude": {
+    "**/target": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+}
