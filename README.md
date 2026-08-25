@@ -177,7 +177,7 @@ Todo lo que está en src/ compila. Nada manual fuera de cargo.
 ## 🤝 Contribuidores
 
 - Instructor: Cristian Beltran
-- Coordinacion de formacion tecnica: Darick Yael Gonzalez Mellado
+- Coordinacion de formacion tecnica: Darick Gonzalez
 - Estudiantes del curso Progamacion de bajo nivel con c: memoria, punteros y registros 2027-1
 ##  Licencia
 
