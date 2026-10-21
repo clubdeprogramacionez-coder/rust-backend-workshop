@@ -1,5 +1,5 @@
 mod labs;
 
 fn main() {
-    labs::lab_2_ownership::run();
+    labs::lab_5_structs_impl::run();
 }
