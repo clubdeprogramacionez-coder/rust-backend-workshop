@@ -55,13 +55,48 @@ Aquí aparece el patrón principal: `match`. La expresión `estado` se compara c
 *Para:* comprender cómo Rust organiza decisiones y evita olvidar casos del sistema
 
 ## 7. PRÁCTICA - Instrucciones para Classroom
-En este laboratorio deben crear un enum que represente varios estados de un sistema o entidad. Luego deben usar `match` para describir qué ocurre en cada caso y comprobar que todos los estados están cubiertos.
+Reto Práctico: Backend API y Autenticación
+Tus objetivos:
 
-Deberán:
-- Definir al menos tres variantes del enum.
-- Asociar una lógica clara a cada caso.
-- Usar `match` para evaluar el valor recibido.
-- Explicar por qué se requiere cubrir todas las opciones posibles.
+Completa el enum ErrorApi con dos variantes: ErrorDeConexion y TokenInvalido.
+
+Completa la función conectar_db: Si la url no es igual a "postgres://localhost", devuelve un Err con ErrorDeConexion. Si coincide, devuelve un Ok con el mensaje "Conexión DB exitosa".
+
+Completa la función validar_token: Si el token no es "admin123", devuelve un Err con TokenInvalido. Si es correcto, devuelve un Ok con el mensaje "Datos del perfil de usuario".
+
+Completa la función principal endpoint_login: Usa el operador ? para llamar a conectar_db y luego a validar_token. Si todo pasa, devuelve los datos.
+
+En el main, usa un match para simular la respuesta HTTP. Maneja el Ok, y en los errores imprime mensajes diferentes simulando códigos HTTP (ej. "Error 500: Falló la DB" o "Error 401: No autorizado").
+
+
+
+enum ErrorApi {
+    // TODO: Agrega ErrorDeConexion y TokenInvalido
+}
+
+fn conectar_db(url: &str) -> Result<String, ErrorApi> {
+    // TODO: Lógica de conexión a la base de datos
+}
+
+fn validar_token(token: &str) -> Result<String, ErrorApi> {
+    // TODO: Lógica de validación del token de seguridad
+}
+
+// Esta función simula lo que hace tu controlador/ruta en el backend
+fn endpoint_login(url: &str, token: &str) -> Result<String, ErrorApi> {
+    // TODO: Llama a conectar_db usando '?'
+    // TODO: Llama a validar_token usando '?' y devuelve su resultado
+}
+
+fn main() {
+    // Prueba cambiar estos valores para simular peticiones correctas o hackeos
+    let peticion = endpoint_login("postgres://localhost", "admin123");
+
+    // TODO: Usa un 'match' para manejar la 'peticion'
+    // - Si es Ok(datos) -> Imprime los datos del usuario (Status 200)
+    // - Si es Err(ErrorApi::ErrorDeConexion) -> Imprime un error interno (Status 500)
+    // - Si es Err(ErrorApi::TokenInvalido) -> Imprime un error de acceso (Status 401)
+}
 
 Comandos de compilación y ejecución:
 ```bash
